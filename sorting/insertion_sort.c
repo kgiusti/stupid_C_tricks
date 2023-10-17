@@ -17,12 +17,8 @@
  * under the License.
  */
 
+#include "record.h"
 #include <stdio.h>
-
-typedef struct record_t {
-    int key;
-    void *payload;
-} record_t;
 
 // insertion_sort
 //
