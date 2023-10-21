@@ -1,4 +1,4 @@
-CFLAGS = -Og -Wall -Werror -std=c11
+CFLAGS = -g -Og -Wall -Werror -std=c11
 
 C_INCLUDES := -Iinclude
 
@@ -22,5 +22,4 @@ all: $(C_OBJS) $(TARGETS)
 	@echo "C_SOURCES: $(C_SOURCES)"
 	@echo "C_OBJS: $(C_OBJS)"
 	@echo "TARGETS: $(TARGETS)"
-	#$(CC) $(C_OBJS) -o a.out
 
