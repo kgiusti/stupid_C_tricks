@@ -22,10 +22,18 @@
 
 // A dummy keyed record object. Used as an example data item in some of the array-based sorting code.
 
-
 typedef struct record_t {
     int key;
     void *payload;
 } record_t;
 
+static inline void swap_records(record_t *a, record_t *b)
+{
+    int tmp_key = a->key;
+    void *tmp_payload = a->payload;
+    a->key = b->key;
+    a->payload = b->payload;
+    b->key = tmp_key;
+    b->payload = tmp_payload;
+}
 #endif

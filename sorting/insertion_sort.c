@@ -19,6 +19,7 @@
 
 #include "record.h"
 #include <stdio.h>
+#include <assert.h>
 
 // insertion_sort
 //
